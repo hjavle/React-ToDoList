@@ -17,6 +17,7 @@ useEffect(()=>{
   // Use Effect
   useEffect(() =>{
    filterHandler();
+   saveLocalTodos();
   }, [todos, status]);
   // functions
   const filterHandler = () =>{
@@ -48,7 +49,7 @@ useEffect(()=>{
   return (
     <div className="App">
        <header>
-  <h1>Harsha's To Do List </h1>
+  <h1> To Do List </h1>
     </header>
       <Form 
         inputText = {inputText}
